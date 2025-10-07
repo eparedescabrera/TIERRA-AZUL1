@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="utf-8">
@@ -12,12 +12,12 @@
     <link href="img/favicon.ico" rel="icon">
 
     <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/739c16c71e.js" crossorigin="anonymous"></script>
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
@@ -40,7 +40,7 @@
                     </div>
                 </div>
                 <div class="col-lg-2 text-center text-lg-right">
-                    <p> <i class="fa-solid fa-location-dot mr-2"></i>pilas de cangel</p>
+                    <p><i class="fa-solid fa-location-dot mr-2"></i><span data-i18n="top.location">Pilas de Cangel</span></p>
                     <!-- <div class="d-inline-flex align-items-center">
                         <a class="text-primary px-3" href="">
                             <i class="fab fa-facebook-f"></i>
@@ -77,22 +77,26 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
-                        <a href="index.html" class="nav-item nav-link active">Inicio</a>
+                        <a href="index.html" class="nav-item nav-link active" data-i18n="nav.home">Inicio</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown" data-toggle="dropdown">Nosotros</a>
+                            <a href="#" class="nav-link dropdown" data-toggle="dropdown" data-i18n="nav.about">Nosotros</a>
                             <div class="dropdown-menu border-0 rounded-0 m-0">
-                                <a href="blog.html" class="dropdown-item">Empresa</a>
-                                <a href="single.html" class="dropdown-item">Estrategia</a>
-                                <a href="destination.html" class="dropdown-item">Calidad</a>
+                                <a href="blog.html" class="dropdown-item" data-i18n="nav.about.company">Empresa</a>
+                                <a href="single.html" class="dropdown-item" data-i18n="nav.about.strategy">Estrategia</a>
+                                <a href="destination.html" class="dropdown-item" data-i18n="nav.about.quality">Calidad</a>
                             </div>
-                        
                         </div>
-                        <a href="service.html" class="nav-item nav-link">Responsabilidad Social</a>
-                        <a href="package.html" class="nav-item nav-link">Productos</a>
-                        <a href="package.html" class="nav-item nav-link">Noticias</a>
-                        <a href="package.html" class="nav-item nav-link">Contacto</a>
-                        
-                      
+                        <a href="service.html" class="nav-item nav-link" data-i18n="nav.socialResponsibility">Responsabilidad Social</a>
+                        <a href="package.html" class="nav-item nav-link" data-i18n="nav.products">Productos</a>
+                        <a href="package.html" class="nav-item nav-link" data-i18n="nav.news">Noticias</a>
+                        <a href="package.html" class="nav-item nav-link" data-i18n="nav.contact">Contacto</a>
+                    </div>
+                    <div class="language-selector ml-lg-3 mt-3 mt-lg-0">
+                        <label for="languageSwitcher" class="sr-only" data-i18n="language.label">Seleccionar idioma</label>
+                        <select id="languageSwitcher" class="custom-select custom-select-sm border-0 bg-light">
+                            <option value="es">ES</option>
+                            <option value="en">EN</option>
+                        </select>
                     </div>
                 </div>
             </nav>
@@ -106,23 +110,23 @@
         <div id="header-carousel" class="carousel slide " data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" src="img/sandia.jpg" alt="Image">
+                    <img class="w-100" src="img/sandia.jpg" alt="Image" fetchpriority="high" decoding="async">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-md-3">Compromiso & Dedicacion</h4>
-                           <p>Dan como resultado productos de la mejor calidad</p>
-                            <a href="about.html" class="btn btn-primary py-md-3 px-md-5 mt-2">Conozca mas</a>
+                            <h4 class="text-white text-uppercase mb-md-3" data-i18n="hero.slide1.subtitle">Compromiso &amp; Dedicación</h4>
+                            <p data-i18n="hero.slide1.text">Dan como resultado productos de la mejor calidad</p>
+                            <a href="about.html" class="btn btn-primary py-md-3 px-md-5 mt-2" data-i18n="hero.slide1.button">Conozca más</a>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/melon 3.jpg" alt="Image">
+                    <img class="w-100" src="img/melon 3.jpg" alt="Image" loading="lazy" decoding="async">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <!-- <h4 class="text-white text-uppercase mb-md-3">Tours & Travel</h4> -->
                             <!-- <h1 class="display-3 text-white mb-md-4">Discover Amazing Places With Us</h1> -->
-                            <p class=" text-white ">Procesos seguros, alimentos saludables</p>
-                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Book Now</a>
+                            <p class=" text-white " data-i18n="hero.slide2.text">Procesos seguros, alimentos saludables</p>
+                            <a href="#" class="btn btn-primary py-md-3 px-md-5 mt-2" data-i18n="hero.slide2.button">Contáctenos</a>
                         </div>
                     </div>
                 </div>
@@ -273,27 +277,27 @@
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-3 pb-3">
-                <h1>SOMOS TIERRA AZUL 1981 S.A</h1>
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">MELONES DE COSTA RICA</h6>
+                <h1 data-i18n="identity.title">SOMOS TIERRA AZUL 1981 S.A</h1>
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;" data-i18n="identity.subtitle">MELONES DE COSTA RICA</h6>
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card">
-                        <img src="img/images.jpg" class="card-img-top" alt="...">
+                        <img src="img/images.jpg" class="card-img-top" alt="Melones de Tierra Azul" loading="lazy" decoding="async">
                         <div class="card-body">
-                            <h5 class="card-title" ><i class="fa-solid fa-award mr-2"></i>Calidad</h5>
-                            <p class="card-text">Integer ultricies diam sit amet sem auctor, sed dignissim erat consectetur. Sed vel ipsum purus.</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
+                            <h5 class="card-title"><i class="fa-solid fa-award mr-2"></i><span data-i18n="cards.quality.title">Calidad</span></h5>
+                            <p class="card-text" data-i18n="cards.quality.text">Garantizamos fruta uniforme y fresca en cada cosecha.</p>
+                            <a href="#" class="btn btn-primary" data-i18n="cards.more">Ver más</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card" >
-                        <img src="img/images.jpg" class="card-img-top" alt="...">
+                        <img src="img/images.jpg" class="card-img-top" alt="Cultivo sostenible de melones" loading="lazy" decoding="async">
                         <div class="card-body">
-                            <h5 class="card-title"><i class="fa-solid fa-seedling mr-2"></i>Agricultura Sostenible</h5>
-                            <p class="card-text">Vestibulum fermentum, urna sed cursus lobortis, dolor ipsum ornare lectus, nec tincidunt metus orci at mi.</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
+                            <h5 class="card-title"><i class="fa-solid fa-seedling mr-2"></i><span data-i18n="cards.sustainable.title">Agricultura Sostenible</span></h5>
+                            <p class="card-text" data-i18n="cards.sustainable.text">Adoptamos prácticas responsables que protegen el suelo y el agua.</p>
+                            <a href="#" class="btn btn-primary" data-i18n="cards.more">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -308,11 +312,11 @@
                 </div> -->
                 <div class="col-lg-4 col-md-6 mb-4">
                     <div class="card" >
-                        <img src="img/images.jpg" class="card-img-top" alt="...">
+                        <img src="img/images.jpg" class="card-img-top" alt="Programa de responsabilidad social" loading="lazy" decoding="async">
                         <div class="card-body">
-                            <h5 class="card-title"><i class="fa-solid fa-heart-pulse mr-2"></i>Responsabilidad Social</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero in dui gravida, a eleifend dolor vestibulum.</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
+                            <h5 class="card-title"><i class="fa-solid fa-heart-pulse mr-2"></i><span data-i18n="cards.social.title">Responsabilidad Social</span></h5>
+                            <p class="card-text" data-i18n="cards.social.text">Impulsamos iniciativas comunitarias que generan bienestar y oportunidades.</p>
+                            <a href="#" class="btn btn-primary" data-i18n="cards.more">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -350,18 +354,15 @@
     <div class="container-fluid py-5">
         <div class="container pt-2 pb-3">
             <div class="text-center mb-3 pb-3">
-                <h1 class=" fab fa-youtube">ver video</h1>
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">TIERRA AZUL 1981 S.A</h6>
+                <h1><i class="fab fa-youtube mr-2"></i><span data-i18n="video.title">Ver video</span></h1>
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;" data-i18n="video.subtitle">TIERRA AZUL 1981 S.A</h6>
                 <i class="fa-solid fa-minus icon-line"></i>
-                <p style="text-align: center;">Nuestra actividad se ubica en Dulce Nombre, Nicoya, Guanacaste, localizado en el área de la Península de Nicoya,
-                     las principales tres actividades agrícolas son la ganadería que es una actividad anual,
-                     el cultivo del arroz secano, y la más importante actividad de la zona es la producción de melón para la exportación.
-                </p>
+                <p style="text-align: center;" data-i18n="video.description">Nuestra actividad se ubica en Dulce Nombre, Nicoya, Guanacaste, localizado en el área de la Península de Nicoya, las principales tres actividades agrícolas son la ganadería que es una actividad anual, el cultivo del arroz secano, y la más importante actividad de la zona es la producción de melón para la exportación.</p>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-12 mb-4">
                     <div class="video-container text-center mb-2 py-5 px-4">
-                        <iframe width="2000" height="500" src="https://www.youtube.com/embed/RGapoPyUY4o?si=kHZa_8qABs0LEyhf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="2000" height="500" src="https://www.youtube.com/embed/RGapoPyUY4o?si=kHZa_8qABs0LEyhf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
                     </div>
                 </div>
             </div>
@@ -371,25 +372,22 @@
     <div class="container-fluid py-5">
         <div class="container pt-2 pb-3">
             <div class="text-center mb-3 pb-3">
-                <h1 >Nuestros productos</h1>
-                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">TIERRA AZUL 1981 S.A</h6>
+                <h1 data-i18n="products.title">Nuestros productos</h1>
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;" data-i18n="products.subtitle">TIERRA AZUL 1981 S.A</h6>
                 <i class="fa-solid fa-minus icon-line"></i>
-                <p style="text-align: center;">Tenemos productos de alta calidad para satisfacer una creciente demanda de alimentos a una población cada día más exigente.
-                     Los altos estándares de calidad en todos nuestros procesos nos han dado como resultado melones 
-                     y sandías seguros y beneficiosos para los consumidores.
-                </p>
+                <p style="text-align: center;" data-i18n="products.description">Tenemos productos de alta calidad para satisfacer una creciente demanda de alimentos a una población cada día más exigente. Los altos estándares de calidad en todos nuestros procesos nos han dado como resultado melones y sandías seguros y beneficiosos para los consumidores.</p>
             </div>
             <div class="row">
                 
             
             <div class="col-lg-6 col-md-6 mb-6 ">
             <div class="card" style="width: 20rem;">
-                <img class="card-img-top" src="img/melon2.jpg" alt="Card image cap">
+                <img class="card-img-top" src="img/melon2.jpg" alt="Melón Tierra Azul" loading="lazy" decoding="async">
                 <div class="card-body">
                   <!-- <h5 class="card-title">Card title</h5> -->
                   
                   <div class="btn-center">
-                    <a href="#" class="btn btn-primary  ">Melon</a>
+                    <a href="#" class="btn btn-primary" data-i18n="products.melon">Melón</a>
                   </div>
                   
                 </div>
@@ -397,12 +395,12 @@
             </div>
             <div class="col-lg-6 col-md-6 mb-6">
               <div class="card image-container" style="width: 20rem;">
-                <img class="card-img-top "   src="img/sandia.jpg" alt="Card image cap" clas>
+                <img class="card-img-top" src="img/sandia.jpg" alt="Sandía Tierra Azul" loading="lazy" decoding="async">
                 <div class="card-body">
                   <!-- <h5 class="card-title">Card title</h5> -->
                  
                   <div class="btn-center">
-                    <a href="#" class="btn btn-primary  ">Sandia</a>
+                    <a href="#" class="btn btn-primary" data-i18n="products.watermelon">Sandía</a>
                   </div>
                   
                 </div>
@@ -423,26 +421,25 @@
             
                 <div class="row">
                     <div class="col-6">
-                    <h2 style="text-align: left;"> Informacion de interes</h2>
-                    <div style="text-align: left ; color: black; font-size: 20px;"  >
-                        <span>redes sociales y contactos </span>
+                    <h2 style="text-align: left;" data-i18n="interest.title">Información de interés</h2>
+                    <div style="text-align: left ; color: black; font-size: 20px;">
+                        <span data-i18n="interest.subtitle">Redes sociales y contactos</span>
                     </div>
-                   
+
                 </div>
                 <div class="col-6">
-                    <p >
-                       
-                        <a href="" style="color:green;">WhatSapp</a>
-                    </p>
-                    
                     <p>
-                        <a href="" style="color: red;">you tube</a>
+                        <a href="#" style="color:green;" data-i18n="interest.whatsapp">WhatsApp</a>
+                    </p>
+
+                    <p>
+                        <a href="#" style="color: red;" data-i18n="interest.youtube">YouTube</a>
                     </p>
                     <p>
-                        <a href="" style="color: blue;">facebook</a>
+                        <a href="#" style="color: blue;" data-i18n="interest.facebook">Facebook</a>
                     </p>
-                    
-                        <a href="" style="color:black;">Contactar personal</a>
+                    <p>
+                        <a href="#" style="color:black;" data-i18n="interest.contact">Contactar personal</a>
                     </p>
                 
                 </div>
@@ -844,8 +841,8 @@
                     <!-- <h1 class="text-primary"><span class="text-white">TRAVEL</span>ER</h1> -->
                     <h1 class=" text-azul"><span style="color: black;">TIERRA </span>AZUL 1981 S.A</h1>
                 </a>
-                <p>Sed ipsum clita tempor ipsum ipsum amet sit ipsum lorem amet labore rebum lorem ipsum dolor. No sed vero lorem dolor dolor</p>
-                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Siguenos</h6>
+                <p data-i18n="footer.description">En Tierra Azul 1981 S.A. cultivamos con pasión melones y sandías que llevan el sabor y la frescura de Costa Rica al mundo.</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;" data-i18n="footer.followUs">Síguenos</h6>
                 <div class="d-flex justify-content-start">
                     <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
                     <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -854,15 +851,11 @@
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 mb-5">
-                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Direccion</h5>
-                <div class="d-flex flex-column justify-content-start">
-                    </p class="text-white-50 mb-2">Ubicacion: De la Plaza Deporte, Pilas de Cangel 200 metros</p>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Destination</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Services</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Packages</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Guides</a>
-                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Testimonial</a>
-                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Blog</a>
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;" data-i18n="footer.contactTitle">Dirección</h5>
+                <div class="d-flex flex-column justify-content-start footer-contact">
+                    <p class="text-white-50 mb-2"><i class="fa fa-map-marker-alt text-primary mr-2"></i><span data-i18n="footer.address">Ubicación: De la Plaza Deporte, Pilas de Cangel 200 metros</span></p>
+                    <p class="text-white-50 mb-2"><i class="fa fa-phone-alt text-primary mr-2"></i><span data-i18n="footer.phone">Teléfono: 4500-2389</span></p>
+                    <p class="text-white-50 mb-2"><i class="fa fa-envelope text-primary mr-2"></i><span data-i18n="footer.email">Correo: waju@grupopenca.com</span></p>
                 </div>
             </div>
             <!-- <div class="col-lg-3 col-md-6 mb-5">
@@ -897,12 +890,10 @@
     <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: rgba(256, 256, 256, .1) !important;">
         <div class="row">
             <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Domain</a>. All Rights Reserved.</a>
-                </p>
+                <p class="m-0 text-white-50" data-i18n="footer.copyright" data-i18n-target="html">Copyright &copy; <a href="#">Tierra Azul 1981 S.A.</a> Todos los derechos reservados.</p>
             </div>
             <div class="col-lg-6 text-center text-md-right">
-                <p class="m-0 text-white-50">Designed by <a href="https://htmlcodex.com">HTML Codex</a>
-                </p>
+                <p class="m-0 text-white-50" data-i18n="footer.design" data-i18n-target="html">Diseñado por <a href="https://htmlcodex.com">HTML Codex</a></p>
             </div>
         </div>
     </div>
@@ -914,20 +905,21 @@
 
 
     <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" defer></script>
+    <script src="lib/easing/easing.min.js" defer></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js" defer></script>
+    <script src="lib/tempusdominus/js/moment.min.js" defer></script>
+    <script src="lib/tempusdominus/js/moment-timezone.min.js" defer></script>
+    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js" defer></script>
 
     <!-- Contact Javascript File -->
-    <script src="mail/jqBootstrapValidation.min.js"></script>
-    <script src="mail/contact.js"></script>
+    <script src="mail/jqBootstrapValidation.min.js" defer></script>
+    <script src="mail/contact.js" defer></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="js/language.js" defer></script>
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>

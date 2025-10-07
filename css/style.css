@@ -9801,3 +9801,15 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+
+.language-selector select {
+  min-width: 90px;
+  font-weight: 500;
+  color: #343a40;
+  background-color: transparent;
+}
+
+.language-selector select:focus {
+  box-shadow: none;
+  outline: none;
+}
